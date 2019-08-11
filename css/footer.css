@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--blackColor);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space);
+  color: white;
+  & p:nth-of-type(2) {
+  }
+  & .footer-contact {
+    & a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

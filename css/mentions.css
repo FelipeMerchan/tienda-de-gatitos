@@ -1,0 +1,36 @@
+.mentions {
+  text-align: center;
+  max-width: 1080px;
+  margin: 5em auto 3.5em;
+  & .mention-title {
+    margin-bottom: 2em;
+  }
+  & .mentionContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 239px);
+    justify-content: center;
+    grid-gap: var(--space);
+    & .mention {
+      box-shadow: var(--shadow);
+      text-align: left;
+      overflow: hidden;
+      border-radius: var(--radius);
+      & .mention-image {
+        object-fit: cover;
+        width: 100%;
+        vertical-align: top;
+      }
+      & div {
+        padding: .5em .5em .8em;
+        & .mention-name {
+          font-size: var(--titles);
+          margin: 0;
+        }
+        & .mention-details {
+          font-size: var(--normal);
+          margin: 0;
+        }
+      }
+    }
+  }
+}

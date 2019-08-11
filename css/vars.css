@@ -1,0 +1,17 @@
+:root {
+  --whiteColor: white;
+  --brandColor: #7acc2d;
+  --brandColorBlackness: #5e9e22;
+  --blackColor: #313337;
+/* Tipografía */
+  --titles: 17px;
+  --normal: 12px;
+/* Espaciado */
+  --space: 10px;
+/* Box Shadow */
+  --shadow: 0 0 2px 1px #e6e5e9;
+/* Border-radius */
+  --radius: 2px;
+}
+
+@custom-media --small (width <= 768px);

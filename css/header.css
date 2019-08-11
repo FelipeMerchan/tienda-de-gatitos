@@ -1,0 +1,29 @@
+.header {
+  & nav {
+    display: flex;
+    background-color: var(--brandColor);
+    padding: var(--space);
+    color: var(--whiteColor);
+    justify-content: space-between;
+    align-items: center;
+    & .brand-image {}
+    & .nav-options {
+      & ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        & li {
+          padding-left: 20px;
+          list-style-type: none;
+          & a {
+            color: var(--blackColor);
+            text-decoration: none;
+            &:hover {
+              color: var(--whiteColor)
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.features {
+  max-width: 1080px;
+  margin: 0 auto;
+  & .grid {
+    min-height: 570px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    justify-content: center;
+    align-content: center;
+    grid-column-gap: 10%;
+    @media (--small) {
+      padding: 10%;
+      grid-template: repeat(3, auto) / 1fr;
+      justify-content: center;
+      grid-row-gap: var(--space);
+    }
+    & .feature {
+      width: 100%;
+      & .feature-image {
+        text-align: center;
+        margin: 0;
+        width: 100%;
+        & img {
+          vertical-align: top;
+          width: 150px;
+          height: 109px;
+        }
+      }
+      & .feature-title {
+        font-size: var(--titles);
+        text-align: center;
+      }
+      & .feature-description {
+        font-size: var(--normal);
+      }
+    }
+  }
+}
