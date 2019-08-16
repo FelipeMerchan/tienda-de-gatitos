@@ -4,6 +4,7 @@
   --brandColorBlackness: #5e9e22;
   --blackColor: #313337;
 /* Tipografía */
+  --h1: 32px;
   --titles: 17px;
   --normal: 12px;
 /* Espaciado */
@@ -14,4 +15,4 @@
   --radius: 2px;
 }
 
-@custom-media --small (width <= 768px);
+@custom-media --small screen and (width <= 768px);
