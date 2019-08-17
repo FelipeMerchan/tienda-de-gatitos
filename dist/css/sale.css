@@ -1,0 +1,85 @@
+:root {
+  --whiteColor: white;
+  --brandColor: #7acc2d;
+  --brandColorBlackness: #5e9e22;
+  --blackColor: #313337;
+/* Tipografía */
+  --h1: 32px;
+  --titles: 17px;
+  --normal: 12px;
+/* Espaciado */
+  --space: 10px;
+/* Box Shadow */
+  --shadow: 0 0 2px 1px #e6e5e9;
+/* Border-radius */
+  --radius: 2px;
+}
+
+.product {
+  background-color: var(--whiteColor);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: var(--space);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 var(--space) var(--space) 0
+}
+
+.product .product-imageWrapper {
+  margin: 0;
+  text-align: center;
+}
+
+.product .product-imageWrapper .product-image {
+  vertical-align: top;
+}
+
+.product .product-title {
+  font-size: var(--titles);
+  margin-top: 0;
+}
+
+.product .product-description {
+  font-size: var(--normal);
+  margin-bottom: 0;
+}
+
+.payment-module {
+  background-color: var(--whiteColor);
+  -webkit-box-shadow: var(--shadow);
+          box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: var(--space);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box
+}
+
+.payment-module .form label {
+  font-size: var(--normal);
+}
+
+.payment-module .form .data {
+  width: calc(100% - var(--space) * 2);
+  margin: var(--space) 0;
+  border: 1px solid var(--blackColor);
+  padding: var(--space);
+  border-radius: 2px;
+}
+
+.payment-module .form button {
+  background-color: var(--brandColor);
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  padding: var(--space);
+  font-size: var(--normal);
+  border: 0;
+  cursor: pointer;
+  border-radius: var(--radius);
+  font-weight: bold;
+}
+
+.payment-module .form button:hover {
+  background-color: var(--brandColorBlackness);
+}

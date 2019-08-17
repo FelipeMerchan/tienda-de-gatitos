@@ -1,0 +1,60 @@
+@import './vars.css';
+
+.product {
+  background-color: var(--whiteColor);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: var(--space);
+  box-sizing: border-box;
+  margin: 0 var(--space) var(--space) 0;
+  & .product-imageWrapper {
+    margin: 0;
+    text-align: center;
+    & .product-image {
+      vertical-align: top;
+    }
+  }
+  & .product-title {
+    font-size: var(--titles);
+    margin-top: 0;
+  }
+  & .product-description {
+    font-size: var(--normal);
+    margin-bottom: 0;
+  }
+}
+
+.payment-module {
+  background-color: var(--whiteColor);
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  padding: var(--space);
+  box-sizing: border-box;
+  & .form {
+    & label {
+      font-size: var(--normal);
+    }
+    & .data {
+      width: calc(100% - var(--space) * 2);
+      margin: var(--space) 0;
+      border: 1px solid var(--blackColor);
+      padding: var(--space);
+      border-radius: 2px;
+    }
+    & button {
+      background-color: var(--brandColor);
+      color: white;
+      text-decoration: none;
+      width: 100%;
+      padding: var(--space);
+      font-size: var(--normal);
+      border: 0;
+      cursor: pointer;
+      border-radius: var(--radius);
+      font-weight: bold;
+      &:hover {
+        background-color: var(--brandColorBlackness);
+      }
+    }
+  }
+}
