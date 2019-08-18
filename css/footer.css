@@ -9,7 +9,7 @@
   }
   & .footer-contact {
     & a {
-      color: white;
+      color: var(--brandColor);
       text-decoration: none;
     }
   }

@@ -140,6 +140,7 @@ body {
 }
 .mentions .mention-title {
   margin-bottom: 2em;
+  font-size: var(--titles);
 }
 .mentions .mentionContainer {
   display: -ms-grid;
@@ -183,7 +184,7 @@ body {
 }
 .footer p:nth-of-type(2) {}
 .footer .footer-contact a {
-  color: white;
+  color: var(--brandColor);
   text-decoration: none;
 }
 :root {
